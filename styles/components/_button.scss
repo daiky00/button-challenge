@@ -21,18 +21,3 @@
 [class^="btn"] {
   @extend %btn;
 }
-
-
-//This code is only for presentation purpose please ignore the code below
-
-@media (max-width:801px) {
-  %btn {
-    width: 49%;
-  }
-}
-
-@media (max-width:480px) {
-  %btn {
-    width: 100%;
-  }
-}
