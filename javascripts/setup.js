@@ -1,10 +1,10 @@
 function setToggleLabel(toggle, target) {
   if (target.prop('disabled')) {
-    toggle.html('Enable');
+    toggle.html('enable');
   } else {
-    toggle.html('Disable');
+    toggle.html('disable');
   }
-};
+}
 
 function readyFn() {
   var $toggleBtn = $("#test-button");
@@ -12,9 +12,12 @@ function readyFn() {
   setToggleLabel($toggleBtn, $targetBtn);
 
   $toggleBtn.on('click', function() {
-    $targetBtn.prop('disabled', function(_, value) { return ! value })
+    $(this).toggleClass('btn--blue');
+    $targetBtn.prop('disabled', function(_, value) {
+      $(this).toggleClass('btn--green bounce');
+      return ! value });
     setToggleLabel($toggleBtn, $targetBtn);
   });
-};
+}
 
 $(readyFn);

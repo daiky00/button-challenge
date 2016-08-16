@@ -1,0 +1,38 @@
+.btn {
+  @include bg-colors($colors);
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+%btn {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  outline: none;
+  margin: 10px auto;
+  &:hover  {
+    opacity: .80;
+  }
+}
+
+[class^="btn"] {
+  @extend %btn;
+}
+
+
+//This code is only for presentation purpose please ignore the code below
+
+@media (max-width:801px) {
+  %btn {
+    width: 49%;
+  }
+}
+
+@media (max-width:480px) {
+  %btn {
+    width: 100%;
+  }
+}

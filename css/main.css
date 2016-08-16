@@ -1,0 +1,112 @@
+body {
+  margin: 0; }
+
+.header {
+  padding: 10px 40px;
+  background: #fff;
+  border-bottom: 4px solid #2ecc71; }
+  .header:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .header button {
+    margin: 32px auto;
+    float: right; }
+
+.container {
+  background-color: #fff;
+  border-top: 4px solid #00aee5;
+  color: #999999;
+  display: block;
+  padding: 40px; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.animation {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0); }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0); } }
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0); }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0); }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0); }
+  90% {
+    transform: translate3d(0, -4px, 0); } }
+
+.shake {
+  animation-name: shake; }
+
+.bounce {
+  animation-name: bounce; }
+
+.btn--blue {
+  background-color: #00aee5;
+  color: #b2edff; }
+
+.btn--blue__light {
+  background-color: #4cd4ff;
+  color: #00607f; }
+
+.btn--blue__dark {
+  background-color: #00607f;
+  color: #4cd4ff; }
+
+.btn--green {
+  background-color: #2ecc71;
+  color: #d1f5e0; }
+
+.btn--green__light {
+  background-color: #7ee2a8;
+  color: #1b7943; }
+
+.btn--green__dark {
+  background-color: #1b7943;
+  color: #7ee2a8; }
+
+.btn--white {
+  background-color: #fff;
+  color: #999999; }
+
+.btn--white__light {
+  background-color: white;
+  color: #999999; }
+
+.btn--white__dark {
+  background-color: #cccccc;
+  color: #666666; }
+
+.btn:disabled {
+  cursor: not-allowed; }
+
+[class^="btn"] {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  outline: none;
+  margin: 10px auto; }
+  [class^="btn"]:hover {
+    opacity: .80; }
+
+@media (max-width: 801px) {
+  [class^="btn"] {
+    width: 49%; } }
+
+@media (max-width: 480px) {
+  [class^="btn"] {
+    width: 100%; } }

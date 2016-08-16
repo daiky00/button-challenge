@@ -1,0 +1,12 @@
+// Colors
+$blue: #00aee5;
+$green: #2ecc71;
+$grey: #999999;
+$white: #fff;
+
+// colors object for bg-color mixin
+$colors: (
+        blue : $blue,
+        green : $green,
+        white: $white
+);

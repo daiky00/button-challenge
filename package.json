@@ -5,19 +5,12 @@
   "author": "Kara Bernert <kara@gust.com>",
   "main": "index.js",
   "license": "UNLICENSED",
-
   "repository": {
     "type": "git",
     "url": "git://github.com/gust/button-challenge.git"
   },
-
-  "scripts": {
-    "build": "node-sass --include-path styles styles/_.scss button-challenge.css",
-    "watch": "nodemon -e scss -x 'npm run build'"
-  },
-
   "devDependencies": {
-    "node-sass": "^3.7.0",
-    "nodemon": "^1.10.0"
+    "gulp": "^3.9.1",
+    "node-sass": "^3.7.0"
   }
 }
