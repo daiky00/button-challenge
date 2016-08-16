@@ -16,3 +16,13 @@
   }
 }
 
+
+// mixing for the header
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+

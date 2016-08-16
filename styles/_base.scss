@@ -1,34 +1,19 @@
-@mixin clearfix {
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-
 body {
+  font-family: $font-default;
   margin: 0;
 }
 
 .header {
   @include clearfix;
   padding: 10px 40px;
-  background: $white;
-  border-bottom: 4px solid $green;
-
-  button {
-    margin: 32px auto;
-    float: right;
-  }
+  border-bottom: 10px solid $green;
 }
 
 .container {
-  background-color: $white;
-  border-top: 4px solid $blue;
+  border-top: 10px solid $blue;
   color: $grey;
-  display: block;
-  padding: 40px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
-
 
 

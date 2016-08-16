@@ -1,11 +1,3 @@
-.btn {
-  @include bg-colors($colors);
-
-  &:disabled {
-    cursor: not-allowed;
-  }
-}
-
 %btn {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
@@ -14,10 +6,20 @@
   outline: none;
   margin: 10px auto;
   &:hover  {
-    opacity: .80;
+    opacity: .75;
+  }
+}
+
+.btn {
+  @include bg-colors($colors);
+
+  &:disabled {
+    cursor: not-allowed;
   }
 }
 
 [class^="btn"] {
   @extend %btn;
 }
+
+
