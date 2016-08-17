@@ -14,7 +14,7 @@ function readyFn() {
   $toggleBtn.on('click', function() {
     $(this).toggleClass('btn--blue');
     $targetBtn.prop('disabled', function(_, value) {
-      $(this).toggleClass('btn--green bounce');
+      $(this).toggleClass('btn--green infinite bounce');
       return ! value });
     setToggleLabel($toggleBtn, $targetBtn);
   });

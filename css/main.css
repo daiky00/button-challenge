@@ -63,6 +63,9 @@ body {
   animation-duration: 1s;
   animation-fill-mode: both; }
 
+.infinite {
+  animation-iteration-count: infinite; }
+
 @keyframes shake {
   from, to {
     transform: translate3d(0, 0, 0); }
@@ -84,8 +87,22 @@ body {
   90% {
     transform: translate3d(0, -4px, 0); } }
 
+@keyframes success {
+  0% {
+    transform: translateY(6px);
+    opacity: 1; }
+  50% {
+    transform: translateY(0px);
+    opacity: .8; }
+  100% {
+    transform: translateY(6px);
+    opacity: 1; } }
+
 .shake {
   animation-name: shake; }
+
+.success {
+  animation-name: success; }
 
 .bounce {
   animation-name: bounce; }
