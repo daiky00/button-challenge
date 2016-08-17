@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git://github.com/gust/button-challenge.git"
   },
+  "scripts": {
+    "build": "gulp"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "node-sass": "^3.7.0"
