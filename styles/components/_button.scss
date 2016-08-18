@@ -4,17 +4,21 @@
   cursor: pointer;
   padding: 10px 20px;
   outline: none;
-  margin: 10px auto;
   &:hover  {
     opacity: .75;
   }
 }
 
 .btn {
-  @include bg-colors($colors);
+  @include bg-colors($btn-colors);
 
   &:disabled {
     cursor: not-allowed;
+    &:hover {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-name: shake;
+    }
   }
 }
 

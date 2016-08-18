@@ -1,4 +1,4 @@
-// mixing to change background color to any element with element--$color plus get light/dark versions automatically by adding __light or __dark at the end of your class
+// Mixing to change background color to any element with element--$color plus get light/dark versions automatically by adding __light or __dark at the end of your class
 @mixin bg-colors($map) {
   @each $theme, $color in $map {
     &--#{$theme} {
@@ -15,9 +15,8 @@
     }
   }
 }
-
-
 // mixing for the header
+
 @mixin clearfix {
   &:after {
     content: "";

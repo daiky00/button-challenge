@@ -12,8 +12,8 @@ body {
 
 .container {
   border-top: 10px solid #00aee5;
-  color: #999999;
-  padding: 0 30px;
+  color: #6d6e71;
+  padding: 40px;
   margin: 0 auto; }
 
 .uppercase {
@@ -27,8 +27,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 20px;
-  outline: none;
-  margin: 10px auto; }
+  outline: none; }
   [class^="btn"]:hover {
     opacity: .75; }
 
@@ -58,6 +57,10 @@ body {
 
 .btn:disabled {
   cursor: not-allowed; }
+  .btn:disabled:hover {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: shake; }
 
 .animation {
   animation-duration: 1s;
@@ -89,13 +92,13 @@ body {
 
 @keyframes success {
   0% {
-    transform: translateY(6px);
+    transform: translateY(12px);
     opacity: 1; }
   50% {
     transform: translateY(0px);
     opacity: .8; }
   100% {
-    transform: translateY(6px);
+    transform: translateY(12px);
     opacity: 1; } }
 
 .shake {

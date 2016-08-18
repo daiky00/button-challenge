@@ -1,15 +1,16 @@
 // Colors
 $blue: #00aee5;
 $green: #2ecc71;
-$grey: #999999;
+$grey: #6d6e71;
 $white: #fff;
 
-// Font
-
-$font-default: sans-serif, "Helvetica Neue";
-
 // colors object for bg-color mixin
-$colors: (
+
+$btn-colors: (
         blue : $blue,
         green : $green
 );
+
+
+// Font
+$font-default: sans-serif, "Helvetica Neue";

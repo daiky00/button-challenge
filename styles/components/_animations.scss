@@ -46,7 +46,7 @@
 
 @keyframes success {
   0% {
-    transform: translateY(6px);
+    transform: translateY(12px);
     opacity: 1
   }
   50% {
@@ -54,7 +54,7 @@
     opacity: .8
   }
   100% {
-    transform: translateY(6px);
+    transform: translateY(12px);
     opacity: 1
   }
 }

@@ -9,5 +9,5 @@ gulp.task('styles', function() {
 
 // Watch task
 gulp.task('default',function() {
-  gulp.watch('styles/**/*.scss',['styles']);
+  gulp.watch('styles/**/*.scss',['styles'])
 });
