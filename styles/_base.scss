@@ -9,11 +9,16 @@ body {
   border-bottom: 10px solid $green;
 }
 
-.container {
+.main {
   border-top: 10px solid $blue;
-  color: $grey;
-  padding: 40px;
-  margin: 0 auto;
 }
+
+.container {
+  padding: 2rem;
+}
+
+
+
+
 
 

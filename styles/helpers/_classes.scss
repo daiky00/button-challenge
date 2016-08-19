@@ -1,0 +1,20 @@
+.bg {
+  @include bg-colors($bg-colors)
+}
+
+.rounded {
+  border-radius: 100px;
+}
+.block {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pull-right {
+  float: right;
+}

@@ -1,0 +1,37 @@
+// Colors
+$blue: #00aee5;
+$green: #2ecc71;
+$grey: #6d6e71;
+$white: #fff;
+$purple: #29337b;
+$yellow: #ecb40b;
+$black: #000;
+
+// Fonts size
+
+$font-sm: 0.7rem;
+$font-md: 1.2rem;
+$font-lg: 1.8rem;
+
+$font-default: sans-serif, "Helvetica Neue";
+
+
+
+// bg object
+$bg-colors: (
+        purple: $purple
+);
+
+// btn objects for mixings
+
+$btn-colors: (
+        blue : $blue,
+        green : $green,
+        yellow: $yellow
+);
+
+$btn-size: (
+        sm: $font-sm,
+        md: $font-md,
+        lg: $font-lg
+);

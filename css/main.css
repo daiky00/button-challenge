@@ -1,3 +1,29 @@
+.bg--purple {
+  background-color: #29337b;
+  color: #fff; }
+
+.bg--purple__light {
+  background-color: #3c4bb4;
+  color: #000; }
+
+.bg--purple__dark {
+  background-color: #161b42;
+  color: #fff; }
+
+.rounded {
+  border-radius: 100px; }
+
+.block {
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.pull-right {
+  float: right; }
+
 body {
   font-family: sans-serif, "Helvetica Neue";
   margin: 0; }
@@ -10,50 +36,81 @@ body {
     display: block;
     clear: both; }
 
+.main {
+  border-top: 10px solid #00aee5; }
+
 .container {
-  border-top: 10px solid #00aee5;
-  color: #6d6e71;
-  padding: 40px;
-  margin: 0 auto; }
+  padding: 2rem; }
 
-.uppercase {
-  text-transform: uppercase; }
-
-.pull-right {
-  float: right; }
-
-[class^="btn"] {
+[class*="btn"] {
   border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   padding: 10px 20px;
-  outline: none; }
-  [class^="btn"]:hover {
+  outline: none;
+  transition: .3s; }
+  [class*="btn"]:hover {
     opacity: .75; }
 
 .btn--blue {
   background-color: #00aee5;
-  color: #b2edff; }
+  color: #fff; }
 
 .btn--blue__light {
-  background-color: #4cd4ff;
-  color: #00607f; }
+  background-color: #33ceff;
+  color: #000; }
 
 .btn--blue__dark {
-  background-color: #00607f;
-  color: #4cd4ff; }
+  background-color: #007499;
+  color: #fff; }
 
 .btn--green {
   background-color: #2ecc71;
-  color: #d1f5e0; }
+  color: #fff; }
 
 .btn--green__light {
-  background-color: #7ee2a8;
-  color: #1b7943; }
+  background-color: #69dd9a;
+  color: #000; }
 
 .btn--green__dark {
-  background-color: #1b7943;
-  color: #7ee2a8; }
+  background-color: #208e4e;
+  color: #fff; }
+
+.btn--yellow {
+  background-color: #ecb40b;
+  color: #fff; }
+
+.btn--yellow__light {
+  background-color: #f7cc4d;
+  color: #000; }
+
+.btn--yellow__dark {
+  background-color: #a37c08;
+  color: #fff; }
+
+.btn--sm {
+  font-size: 0.7rem; }
+
+.btn--md {
+  font-size: 1.2rem; }
+
+.btn--lg {
+  font-size: 1.8rem; }
+
+.btn--blue__transparent {
+  background-color: transparent;
+  border: 2px solid #00aee5;
+  color: #00aee5; }
+
+.btn--green__transparent {
+  background-color: transparent;
+  border: 2px solid #2ecc71;
+  color: #2ecc71; }
+
+.btn--yellow__transparent {
+  background-color: transparent;
+  border: 2px solid #ecb40b;
+  color: #ecb40b; }
 
 .btn:disabled {
   cursor: not-allowed; }
@@ -61,6 +118,9 @@ body {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: shake; }
+
+.btn--rounded {
+  border-radius: 100px; }
 
 .animation {
   animation-duration: 1s;
@@ -92,14 +152,46 @@ body {
 
 @keyframes success {
   0% {
-    transform: translateY(12px);
+    transform: translateY(-6px);
     opacity: 1; }
   50% {
-    transform: translateY(0px);
+    transform: translateY(6px);
     opacity: .8; }
   100% {
-    transform: translateY(12px);
+    transform: translateY(-6px);
     opacity: 1; } }
+
+@keyframes rubber {
+  from {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes zoom {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes calling {
+  from {
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.3); }
+  50% {
+    box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.3); }
+  to {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3); } }
 
 .shake {
   animation-name: shake; }
@@ -109,3 +201,12 @@ body {
 
 .bounce {
   animation-name: bounce; }
+
+.rubber {
+  animation-name: rubber; }
+
+.zoom {
+  animation-name: zoom; }
+
+.calling {
+  animation-name: calling; }
