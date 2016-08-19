@@ -42,14 +42,14 @@ body {
 .container {
   padding: 2rem; }
 
-[class*="btn--"], [class*="btn"] {
+[class*="btn"] {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   cursor: pointer;
   padding: 10px 20px;
   outline: none;
   transition: .3s; }
-  [class*="btn--"]:hover, [class*="btn"]:hover {
+  [class*="btn"]:hover {
     opacity: .75; }
 
 .btn--blue {
@@ -138,6 +138,12 @@ body {
 
 .btn--rounded {
   border-radius: 100px; }
+  .btn--rounded:disabled {
+    cursor: not-allowed; }
+    .btn--rounded:disabled:hover {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-name: shake; }
 
 .animation {
   animation-duration: 1s;
@@ -208,7 +214,7 @@ body {
   50% {
     box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.3); }
   to {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3); } }
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.3); } }
 
 .shake {
   animation-name: shake; }

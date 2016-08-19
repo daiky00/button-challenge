@@ -31,5 +31,13 @@
 
 .btn--rounded {
   border-radius: 100px;
+  &:disabled {
+    cursor: not-allowed;
+    &:hover {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-name: shake;
+    }
+  }
 }
 
