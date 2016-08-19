@@ -25,15 +25,11 @@
   }
 }
 
-.btn--rounded {
-  border-radius: 100px;
-}
-
-[class*="btn--"] {
-  @extend %btn;
-}
-
 [class*="btn"] {
   @extend %btn;
+}
+
+.btn--rounded {
+  border-radius: 100px;
 }
 
