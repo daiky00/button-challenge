@@ -17,6 +17,6 @@ Status: Finished
 ### make interactive animations
 ### make code as reusable as possible
 ### make UI look good with buttons
-### let my design skill explode :grinning:
+### let my design skills explode :grinning:
 
 
