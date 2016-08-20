@@ -15,7 +15,7 @@
     }
   }
 }
-
+// Mixings for buttons
 @mixin btn-transparent($map) {
   @each $theme, $color in $map {
     &--#{$theme}__transparent {

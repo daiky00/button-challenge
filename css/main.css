@@ -138,12 +138,6 @@ body {
 
 .btn--rounded {
   border-radius: 100px; }
-  .btn--rounded:disabled {
-    cursor: not-allowed; }
-    .btn--rounded:disabled:hover {
-      animation-duration: 1s;
-      animation-fill-mode: both;
-      animation-name: shake; }
 
 .animation {
   animation-duration: 1s;
