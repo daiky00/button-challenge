@@ -1,10 +1,21 @@
+%btn {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  outline: none;
+  transition: .3s;
+  &:hover  {
+    opacity: .75;
+  }
+}
+
 .btn {
   @include bg-colors($btn-colors);
   @include btn-size($btn-size);
   @include btn-transparent($btn-colors);
-  
+
   &:disabled {
-    color: $grey;
     cursor: not-allowed;
     &:hover {
       animation-duration: 1s;
@@ -15,18 +26,9 @@
 }
 
 [class*="btn"] {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  color: $white;
-  cursor: pointer;
-  padding: 10px 20px;
-  outline: none;
-  transition: .3s;
-  &:hover  {
-    opacity: .75;
-  }
+  @extend %btn;
 }
 
-.btn-rounded {
+.btn--rounded {
   border-radius: 100px;
 }

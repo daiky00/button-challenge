@@ -39,6 +39,16 @@ body {
 .container {
   padding: 2rem; }
 
+[class*="btn"] {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  outline: none;
+  transition: .3s; }
+  [class*="btn"]:hover {
+    opacity: .75; }
+
 .btn--blue {
   background-color: #00aee5;
   color: #fff; }
@@ -117,25 +127,13 @@ body {
   color: #e91e63; }
 
 .btn:disabled {
-  color: #6d6e71;
   cursor: not-allowed; }
   .btn:disabled:hover {
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-name: shake; }
 
-[class*="btn"] {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px 20px;
-  outline: none;
-  transition: .3s; }
-  [class*="btn"]:hover {
-    opacity: .75; }
-
-.btn-rounded {
+.btn--rounded {
   border-radius: 100px; }
 
 .animation {
