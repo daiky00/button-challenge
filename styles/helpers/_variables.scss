@@ -8,4 +8,32 @@ $yellow: #ecb40b;
 $red: #e91e63;
 $black: #000;
 
+// Fonts size
+
+$font-sm: 0.7rem;
+$font-md: 1.2rem;
+$font-lg: 1.8rem;
+
 $font-default: sans-serif, "Helvetica Neue";
+
+
+
+// bg object
+$bg-colors: (
+        purple: $purple
+);
+
+// btn objects for mixings
+
+$btn-colors: (
+        blue : $blue,
+        green : $green,
+        yellow: $yellow,
+        red: $red
+);
+
+$btn-size: (
+        sm: $font-sm,
+        md: $font-md,
+        lg: $font-lg
+);
