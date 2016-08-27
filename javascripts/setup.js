@@ -12,9 +12,9 @@ function readyFn() {
   setToggleLabel($toggleBtn, $targetBtn);
 
   $toggleBtn.on('click', function() {
-    $(this).toggleClass('btn--blue');
+    $(this).toggleClass('btn-bg-blue');
     $targetBtn.prop('disabled', function(_, value) {
-      $(this).toggleClass('btn--green animation calling infinite');
+      $(this).toggleClass('btn-bg-green animation calling infinite');
       return ! value });
     setToggleLabel($toggleBtn, $targetBtn);
   });
